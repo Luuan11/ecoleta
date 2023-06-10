@@ -8,7 +8,7 @@
 
 :root{
     --title-color: #322153;
-    --primary-color:
+    --primary-color: #34cb79;
 }
 
 a{
@@ -78,17 +78,53 @@ body{
     
 }
 
-#bg-home-page p{
+#bg-home-page .main p{
     font-size: 24px;
     line-height: 38px;
     margin-top: 24px;
 }
 
-#bg-home-page a {
+#bg-home-page .main a {
     width: 100%;
+    height: 72px;
+    max-width: 360px;
 
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: background .2s;
 }
 
-#bg-home-page a span{
-    
+#bg-home-page a:hover{
+    background-color: #2fb86e;
+}
+
+#bg-home-page .main a span{
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-home-page .main a::after{
+    content: "";
+    background-image: url(../assets/icons/search.svg);
+
+    width: 20px;
+    height: 20px;
+}
+
+#bg-home-page .main a strong{
+    flex: 1;
+    text-align: center;
 }
