@@ -95,11 +95,12 @@ body{
 
     display: flex;
     align-items: center;
+
     margin-top: 40px;
     transition: background .2s;
 }
 
-#bg-home-page a:hover{
+#bg-home-page .main a:hover{
     background-color: #2fb86e;
 }
 
@@ -116,7 +117,7 @@ body{
     align-items: center;
 }
 
-#bg-home-page .main a::after{
+#bg-home-page .main a span::after{
     content: "";
     background-image: url(../assets/icons/search.svg);
 
