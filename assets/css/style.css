@@ -130,26 +130,3 @@ body{
     text-align: center;
 }
 
-/* responsive */
-@media screen and (max-width: 900px) {
-    #bg-page-home{
-        background-position-x: 70vw;
-    }
-
-    #bg-page-home .content{
-        align-items: center;
-        text-align: center;
-    }
-
-    #bg-page-home .header a{
-        position: absolute;
-        bottom: 48px;
-
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #bg-page-home .main{
-        align-items: center;
-    }
-}
