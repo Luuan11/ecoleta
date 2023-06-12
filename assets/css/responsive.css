@@ -1,5 +1,13 @@
 /* responsive */
+@media screen and (max-width: 1700px){
+
+    #bg-page-home{
+        background-position-x: 40vw;
+    }
+}
+
 @media screen and (max-width: 900px) {
+
     #bg-page-home{
         background-position-x: 70vw;
     }
@@ -19,5 +27,12 @@
 
     #bg-page-home .main{
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 760px){
+    
+    #bg-page-home{
+        background-position-y: 200px;
     }
 }

@@ -27,6 +27,8 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+/* Homepage */
+
 #bg-home-page{
     background: url("../assets/icons/home-background.svg") no-repeat;
     height: 100vh;
