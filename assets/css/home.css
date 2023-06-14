@@ -1,7 +1,7 @@
 /* Homepage */
 
 #bg-home-page{
-    background: url("../assets/icons/home-background.svg") no-repeat;
+    background: url("../icons/home-background.svg") no-repeat;
     height: 100vh;
     background-position: 35vw bottom;
 }
