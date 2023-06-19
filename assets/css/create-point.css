@@ -114,6 +114,6 @@
     cursor: pointer;
 }
 
-page-create-point form button:hover{
+#page-create-point form button:hover{
     background-color: #2fb86f;
 }
