@@ -6,7 +6,7 @@ function populateUfs(){
     .then ( states => {
 
         for( const state of states ){
-            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}]</option>`
+            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
         
         }
     })
