@@ -55,7 +55,7 @@ for (const item of itemsToCollect){
 const collectedItems = document.querySelector("input[name=items]")
 
 let selectedItems = []
--
+
 function handleSelectedItem(event){
     const itemLi = event.target
 
