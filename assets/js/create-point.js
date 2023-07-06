@@ -75,6 +75,8 @@ function handleSelectedItem(event){
         })
 
         selectedItems = filteredItems
+
+        
     } else {
         selectedItems.push(itemId)
     }
