@@ -1,0 +1,32 @@
+#search-results {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#search-results header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 48px;
+}
+
+#search-results header a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#search-results header a span{
+    background-image: url('../icons/arrow-left.svg');
+
+    display: flex;
+    margin-right: 1rem;
+
+    width: 20px;
+    height: 24px;
+}
