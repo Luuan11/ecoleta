@@ -43,7 +43,7 @@ body::after{
 }
 
 #search-results main {
-    margin-top: 48px;
+    margin: 48px;
 }
 
 #search-results main h3{
@@ -59,9 +59,10 @@ body::after{
     gap: 24px;
 }
 
-#search-results main img{
+#search-results main .card img{
     width: 100%;
     height: 150px;
+    object-fit: cover;
 
     border-radius: 8px 8px 0 0;
 }
