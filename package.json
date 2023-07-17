@@ -1,9 +1,7 @@
 {
   "name": "ecoleta",
-  "version": "1.0.0",
-  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,5 +11,8 @@
   "homepage": "https://github.com/Luuan11/ecoleta#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
