@@ -47,6 +47,7 @@
 
     #page-create-point .items-grid {
         grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media(min-width: 1700px) {
