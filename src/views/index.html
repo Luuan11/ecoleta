@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoleta </title>
+{% extends "layout.html" %}
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+{% set bodyId = "bg-home-page" %}
 
-    <!-- modal -->
-    <link rel="stylesheet" href="assets/css/modal.css">
-</head>
+    {% block styles %}
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
+    {% endblock styles %}
+
 <body>
-    <div id="bg-home-page">
-        <div class="home__content">
-            <header class="header" id="header">
-                <img src="assets/icons/logo.svg" alt="logo do ecoleta">
-                <a href="/create-point"> <span></span> Cadastre um ponto de coleta</a>
-            </header>
 
+    {# <div id="bg-home-page"> #}
+        {% block content %}
+
+        <header class="header" id="header">
+            <img src="assets/icons/logo.svg" alt="logo do ecoleta">
+            <a href="/"> <span></span> Voltar para o Inicio</a>
+        </header>
+
+        <div class="home__content">
             <main class="main">
                 <h1>Seu Marketplace de coleta de resíduos</h1>
 
@@ -29,10 +26,14 @@
                 <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
             </main>
         </div>
-    </div>
 
+        {% endblock content %}
+
+    {# </div> #}
+{% block modal %}
     {% include "partials/modal.html" %}
+{% endblock modal %}
 
+    {% block scripts %}
     <script src="assets/js/index.js"></script>
-</body>
-</html>
+    {% endblock scripts %}
