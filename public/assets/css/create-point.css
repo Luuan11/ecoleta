@@ -55,10 +55,19 @@
 
 #page-create-point form legend{
     margin-bottom: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#page-create-point h2{
+#page-create-point form legend h2{
     font-size: 24px;
+}
+
+#page-create-point form legend span{
+    color: var(--title-color);
 }
 
 #page-create-point form .field{
