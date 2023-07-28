@@ -1,20 +1,18 @@
 {% extends "layout.html" %}
 
-{% set bodyId = "bg-home-page" %}
+{% set pageId = "bg-home-page" %}
 
     {% block styles %}
         <link rel="stylesheet" href="assets/css/home.css">
         <link rel="stylesheet" href="assets/css/modal.css">
     {% endblock styles %}
 
-<body>
-
     {# <div id="bg-home-page"> #}
         {% block content %}
 
         <header class="header" id="header">
             <img src="assets/icons/logo.svg" alt="logo do ecoleta">
-            <a href="/"> <span></span> Voltar para o Inicio</a>
+            <a href="/create-point"> <span></span> Cadastre um ponto de coleta</a>
         </header>
 
         <div class="home__content">
@@ -30,10 +28,10 @@
         {% endblock content %}
 
     {# </div> #}
-{% block modal %}
-    {% include "partials/modal.html" %}
-{% endblock modal %}
+    {% block modal %}
+        {% include "partials/modal.html" %}
+    {% endblock modal %}
 
     {% block scripts %}
-    <script src="assets/js/index.js"></script>
+        <script src="assets/js/index.js"></script>
     {% endblock scripts %}
