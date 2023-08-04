@@ -27,7 +27,14 @@ server.get("/create-point", (req, res) => {
 })
 
 server.get("/search", (req, res) => {
-    return res.render("search-results.html")
+
+    db.all(`SELECT * FROM places`, function(err, rows) {
+        if(err) {
+            return console.log(err)
+        }
+
+        return res.render("search-results.html", { places: rows})
+    })
 })
 
 //ligando o servidor

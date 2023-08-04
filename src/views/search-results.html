@@ -22,27 +22,22 @@
         </h3>
 
         <div class="cards">
+
+            {% for place in places %}
+
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1613&q=80" alt="colectoria">
-                <h2>Colectoria</h2>
-                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                <img src="{{ place.image }}" alt="{{ place.name }}">
+                <h2>{{ place.name }}</h2>
+                <h3>{{ place.items }}</h3>
                 <p>
-                    Rio do Sul, Santa Catarina <br>
-                    Guilherme Gemballa, Jardim América <br>
-                    Número 260
+                    {{ place.CITY }}, {{ place.state }} <br>
+                    {{ place.address}} <br>
+                    {{ place.address2 }}
                 </p>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="colectoria">
-                <h2>Papersider</h2>
-                <h3>Papéis e Papelão</h3>
-                <p>
-                    Rio do Sul, Santa Catarina <br>
-                    Guilherme Gemballa, Jardim América <br>
-                    Número 260
-                </p>
-            </div>
+            {% endfor %}
+
     </main>
 
     {% endblock content %}

@@ -18,7 +18,7 @@ module.exports = db
 //             address TEXT,
 //             address2 TEXT,
 //             state TEXT,
-//             CITY TEXT,
+//             city TEXT,
 //             items TEXT
 //         );
 //     `)
