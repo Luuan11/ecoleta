@@ -18,7 +18,7 @@
 
     <main>
 
-        
+        {% if total > 0 %}
 
         <h3>
             <strong>{{ total }} Pontos</strong> encontrados
@@ -40,7 +40,14 @@
             </div>
 
             {% endfor %}
+            
+        </main>
+        {% else %}
 
-    </main>
+        <h3><strong>Nenhum local</strong> encontrado</h3>
+
+
+        {% endif %}
+
 
     {% endblock content %}
