@@ -13,7 +13,7 @@
 {% block content %}
     {% include "partials/page-header.html" %}
 
-    <form action="" class="form">
+    <form action="/savepoint" method="POST" class="form">
         <h1>Cadastro do ponto de coleta</h1>
         <fieldset>
             <legend>
@@ -69,27 +69,27 @@
                 <span>Selecione um ou mais itens abaixo!</span>
             </legend>
             <div class="items-grid">
-                <li data-id="1">
+                <li data-id="Lâmpadas">
                     <img src="../assets/icons/lampadas.svg" alt="icone das lampadas"/>
                     <span>Lâmpadas</span>
                 </li>
-                <li data-id="2">
+                <li data-id="Pilhas e Baterias">
                     <img src="../assets/icons/baterias.svg" alt="icone das Pilhas e Baterias"/>
                     <span>Pilhas e Baterias</span>
                 </li>
-                <li data-id="3">
+                <li data-id="Papéis e Papelão">
                     <img src="../assets/icons/papeis-papelao.svg" alt="icone das Papéis e Papelão"/>
                     <span>Papéis e Papelão</span>
                 </li>
-                <li data-id="4">
+                <li data-id="Resíduos Eletrônicos">
                     <img src="../assets/icons/eletronicos.svg" alt="icone das Resíduos Eletrônicos"/>
                     <span>Resíduos Eletrônicos</span>
                 </li>
-                <li data-id="5">
+                <li data-id="Resíduos Orgânicos">
                     <img src="../assets/icons/organicos.svg" alt="icone das Resíduos Orgânicos"/>
                     <span>Resíduos Orgânicos</span>
                 </li>
-                <li data-id="6">
+                <li data-id="Óleo de Cozinha">
                     <img src="../assets/icons/oleo.svg" alt="icone das óleo de Cozinha"/>
                     <span>Óleo de Cozinha</span>
                 </li>

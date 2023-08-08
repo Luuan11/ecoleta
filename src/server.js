@@ -23,7 +23,14 @@ server.get("/", (req, res) => {
 
 // Página de criação de pontos
 server.get("/create-point", (req, res) => {
+
+    req.query
+
     return res.render("create-point.html")
+})
+
+server.post("/savepoint", (req, res) => {
+    return res.send("ok")
 })
 
 server.get("/search", (req, res) => {
