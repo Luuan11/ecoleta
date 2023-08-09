@@ -8,6 +8,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="assets/css/create-point.css"/>
+    <link rel="stylesheet" href="assets/css/modal.css"/>
 {% endblock styles %}
 
 {% block content %}
@@ -98,8 +99,16 @@
         </fieldset>
         <button type="submit">Cadastrar ponto de coleta</button>
     </form>
-{% endblock content %}
 
+    
+    {% endblock content %}
+    
+    {% block modal %}
+        {% if saved %}
+            {% include "partials/point-created.html" %}
+        {% endif %}
+    {% endblock modal %}
+    
 {% block scripts %}
     <script src="../assets/js/create-point.js"></script>
 {% endblock scripts %}
